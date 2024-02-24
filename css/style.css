@@ -1023,20 +1023,20 @@ footer .creadits p {
 
 	.home-background .container .title h1 {
 		font-size: 3.1rem;
-		margin-top: 0.7rem;
+		margin-top: 0.5rem;
 	}
 
 	.home-background .container .title h3 {
-		margin-top: 1rem;
+		margin-top: 0.7rem;
 	}
 
 	.home-background .container .title p {
-		margin-top: 1.3rem;
+		margin-top: 1.1rem;
 		font-size: 2rem;
 	}
 
 	.home-background .container .image-company img {
-		margin-top: -20rem;
+		margin-top: -10rem;
 		max-width: 30rem;
 	}
 
