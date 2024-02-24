@@ -1,0 +1,1096 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+
+.navigasi {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 7%;
+	background-color: red;
+	border-bottom: 4px solid black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+
+.navigasi .logo a {
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+
+.navigasi .logo a span {
+	color: black;
+}
+
+.navigasi .navigasi-nav {
+	display: flex;
+}
+
+.navigasi .navigasi-nav a {
+	margin: 0 1rem;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s;
+}
+
+.navigasi .navigasi-nav a:hover {
+	color: black;
+}
+
+.navigasi .navigasi-nav a::after {
+	content: '';
+	display: flex;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.2rem solid black;
+	transform: scaleX(0);
+	transition: 0.3s;
+}
+
+.navigasi .navigasi-nav a:hover::after {
+	transform: scaleX(0.5);
+}
+
+
+.navigasi .humberger-menu a {
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s;
+}
+
+.navigasi .humberger-menu a:hover {
+	color: black;
+}
+
+#humberger-menu {
+	display: none;
+}
+
+.home-background {
+	margin-top: 3rem;
+	padding: 0 2rem;
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.home-background .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	font-family: arial;
+}
+
+.home-background .container .title h2 {
+	font-size: 3.5rem;
+	font-weight: bold;
+	font-family: Noto Serif;
+	text-transform: capitalize;
+	color: red;
+}
+
+.home-background .container .title h2 span {
+	color: white;
+}
+
+.home-background .container .title h1 {
+	margin-top: 0.6rem;
+	font-size: 3.2rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.home-background .container .title h1 span {
+	color: white;
+}
+
+.home-background .container .title h3 {
+	margin-top: 0.5rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: red;
+}
+
+.home-background .container .title p {
+	margin-top: 0.5rem;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	max-width: 30rem;
+	color: white
+}
+
+.home-background .container .title h3 span {
+	color: white;
+}
+
+.home-background .container .title .icon {
+	margin-top: 1.5rem;
+}
+
+.home-background .container .title .icon a {
+	margin: 0 0.3rem;
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: white;
+	padding: 0.2rem 0.2rem;
+	border: 3px solid white;
+	border-radius: 1rem;
+	transition: 0.5s;
+}
+
+.home-background .container .title .icon a:hover {
+	color: red;
+	border-color: red;
+}
+
+.home-background .container .image-company img {
+	max-width: 35rem;
+	cursor: pointer;
+	animation: image-home 3s ease-in-out infinite;
+}
+
+@keyframes image-home {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-2.23rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.home-about {
+	padding: 8rem 2rem;
+}
+
+.home-about h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+	color: red;
+}
+
+.home-about h2 span {
+	color: black;
+}
+
+.home-about .company {
+	margin-top: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.home-about .company img {
+	width: 40rem;
+	height: 20rem;
+	border: 4px solid black;
+	border-radius: 2rem;
+	transition: 0.5s;
+}
+
+.home-about .company img:hover {
+	transform: scale(1.03);
+	border-color: red;
+}
+
+.home-about .company .about-company h3 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.home-about .company .about-company h3 span {
+	color: red;
+}
+
+.home-about .company .about-company p {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	max-width: 30rem;
+	text-align: justify;
+}
+
+.home-about .company .about-company {
+	text-align: center;
+}
+
+
+.home-about .company .about-company a {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	padding: 0.5rem 1.5rem;
+	background-color: black;
+	border-radius: 0.7rem;
+	border: 2px solid black;
+	transition: 0.5s;
+}
+
+.home-about .company .about-company a:hover {
+	color: red;
+	background-color: white;
+	border-color: red;
+}
+
+.home-image {
+	padding: 0 7%;
+}
+
+.home-image .gambar .container {
+	width: 100%;
+	height: 600px;
+	margin: auto;
+	position: relative;
+}
+
+.home-image .gambar .container .image {
+	display: block;
+}
+
+.home-image .gambar .container .image img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.home-image .gambar .container .button {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 5;
+}
+
+.home-image .gambar .container .button a {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	align-items: center;
+	cursor: pointer;
+	color: white;
+	background-color: black;
+	font-size: 30px;
+	user-select: none;
+}
+
+.home-image .gambar .container .button a:hover {
+	background-color: red;
+}
+
+.home-image .gambar .container .button .prev {
+	border-radius: 0 5px 5px 0;
+}
+
+.home-image .gambar .container .button .next {
+	border-radius: 5px 0 0 5px;
+}
+
+.home-image .gambar .dots {
+	text-align: center;
+	position: absolute;
+	bottom: 120px;
+	left: 36%;
+	background-color: none;
+	padding: 5px 10px;
+	height: 20px;
+	border-radius: 35px;
+}
+
+.home-image .gambar .dot {
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: white;
+	display: inline-block;
+	margin: 0 2px;
+}
+
+.home-image .gambar .active, .dot:hover {
+	background-color: red;
+	transition: 0.5s ease;
+}
+
+.home-menu {
+	margin-top: -6rem;
+	padding: 8rem 2rem;
+}
+
+.home-menu h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+	color: black;
+}
+
+.home-menu h2 span {
+	color: red;
+}
+
+.home-menu .pizza h3 {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.home-menu .pizza .card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.home-menu .pizza .card .menu-card {
+	margin: 1rem 1rem;
+	padding: 1.5rem 1rem;
+	border: 3px solid red;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	transition: 0.5s;
+}
+
+.home-menu .pizza .card .menu-card:hover {
+	transform: scale(1.02);
+	border-color: black;
+	background-color: whitesmoke;
+}
+
+.home-menu .pizza .card .menu-card img {
+	padding: 0.5rem 0.5rem;
+	max-width: 11rem;
+	background-color: yellow;
+	border-radius: 1rem;
+}
+
+.home-menu .pizza .card .menu-card h4 {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.home-menu .pizza .card .menu-card .harga {
+	margin-top: 0.3rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
+
+.home-menu .pizza .card .menu-card a {
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	background-color: red;
+	border-radius: 0.5rem;
+	border: 2px solid red;
+	transition: 0.5s;
+}
+
+.home-menu .pizza .card .menu-card a:hover {
+	color: black;
+	background-color: white;
+	border-color: black;
+}
+
+.home-menu .pasta h3 {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.home-menu .pasta .card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.home-menu .pasta .card .menu-card {
+	margin: 1rem 1rem;
+	padding: 1.5rem 1rem;
+	border: 3px solid red;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	transition: 0.5s;
+}
+
+.home-menu .pasta .card .menu-card:hover {
+	transform: scale(1.02);
+	border-color: black;
+	background-color: whitesmoke;
+}
+
+.home-menu .pasta .card .menu-card img {
+	padding: 0.5rem 0.5rem;
+	max-width: 11rem;
+	background-color: yellow;
+	border-radius: 1rem;
+}
+
+.home-menu .pasta .card .menu-card h4 {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.home-menu .pasta .card .menu-card .harga {
+	margin-top: 0.3rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
+
+.home-menu .pasta .card .menu-card a {
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	background-color: red;
+	border-radius: 0.5rem;
+	border: 2px solid red;
+	transition: 0.5s;
+}
+
+.home-menu .pasta .card .menu-card a:hover {
+	color: black;
+	background-color: white;
+	border-color: black;
+}
+
+.home-menu .rice h3 {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.home-menu .rice .card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.home-menu .rice .card .menu-card {
+	margin: 1rem 1rem;
+	padding: 1.5rem 1rem;
+	border: 3px solid red;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	transition: 0.5s;
+}
+
+.home-menu .rice .card .menu-card:hover {
+	transform: scale(1.02);
+	border-color: black;
+	background-color: whitesmoke;
+}
+
+.home-menu .rice .card .menu-card img {
+	padding: 0.5rem 0.5rem;
+	max-width: 11rem;
+	background-color: yellow;
+	border-radius: 1rem;
+}
+
+.home-menu .rice .card .menu-card h4 {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.home-menu .rice .card .menu-card .harga {
+	margin-top: 0.3rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
+
+.home-menu .rice .card .menu-card a {
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	background-color: red;
+	border-radius: 0.5rem;
+	border: 2px solid red;
+	transition: 0.5s;
+}
+
+.home-menu .rice .card .menu-card a:hover {
+	color: black;
+	background-color: white;
+	border-color: black;
+}
+
+.home-menu .snack h3 {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.home-menu .snack .card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.home-menu .snack .card .menu-card {
+	margin: 1rem 1rem;
+	padding: 1.5rem 1rem;
+	border: 3px solid red;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	transition: 0.5s;
+}
+
+.home-menu .snack .card .menu-card:hover {
+	transform: scale(1.02);
+	border-color: black;
+	background-color: whitesmoke;
+}
+
+.home-menu .snack .card .menu-card img {
+	padding: 0.5rem 0.5rem;
+	max-width: 11rem;
+	background-color: yellow;
+	border-radius: 1rem;
+}
+
+.home-menu .snack .card .menu-card h4 {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.home-menu .snack .card .menu-card .harga {
+	margin-top: 0.3rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
+
+.home-menu .snack .card .menu-card a {
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	padding: 0.5rem 1rem;
+	background-color: red;
+	border-radius: 0.5rem;
+	border: 2px solid red;
+	transition: 0.5s;
+}
+
+.home-menu .snack .card .menu-card a:hover {
+	color: black;
+	background-color: white;
+	border-color: black;
+}
+
+.home-rate {
+	margin-top: -6rem;
+	padding: 8rem 2rem;
+}
+
+.home-rate h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+	color: red;
+}
+
+.home-rate h2 span {
+	color: black;
+}
+
+.home-rate .rate {
+	margin-top: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.home-rate .rate .product {
+	padding: 2rem 1.5rem;
+	margin: 0.5rem 0.5rem;
+	border: 3px solid red;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	transition: 0.5s;
+}
+
+.home-rate .rate .product img {
+	max-height: 16rem;
+	background-color: yellow;
+	border-radius: 1rem;
+}
+
+.home-rate .rate .product .star {
+	margin-top: 1.5rem;
+}
+
+.home-rate .rate .product .star i {
+	font-size: 2.5rem;
+	color: gold;
+}
+
+.home-rate .rate .product h4 {
+	margin-top: 0.5rem;
+	font-size: 2rem;
+	font-weight: bold;
+	color: black;
+	text-transform: capitalize;
+}
+
+.home-rate .rate .product .harga {
+	margin-top: 0.5rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+}
+
+.ourcontact {
+	padding: 8rem 2rem;
+}
+
+.ourcontact h2 {
+	margin-bottom: 3rem;
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	color: black;
+}
+
+.ourcontact span {
+	color: red;
+}
+
+.ourcontact .contact {
+	margin-top: 5rem;
+	display: flex;
+}
+
+.ourcontact .contact .map {
+	flex: 1 1 45rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.ourcontact .contact form {
+	flex: 1 1 45rem;
+	padding: 5rem 2rem;
+	text-align: center;
+	background-color: red;
+}
+
+
+.ourcontact .contact form .input-group {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	border: 2px solid white;
+	padding-left: 2rem;
+	border-radius: 2rem;
+}
+
+.ourcontact .contact form .input-group input {
+	width: 100%;
+	padding: 1.5rem;
+	font-size: 1.4rem;
+	background-color: white;
+	color: black;
+	border-radius: 2rem;
+}
+
+.ourcontact .contact form .btn {
+	margin-top: 3rem;
+	display: inline-block;
+	border: 2px solid white;
+	padding: 1rem 2rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: black;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 1rem;
+	transition: 0.5s;
+}
+
+.ourcontact .contact form .btn:hover {
+	transform: scale(1.1);
+	color: red;
+	border-color: black;
+}
+
+footer {
+	padding: 1.5rem 7%;
+	background-color: red;
+}
+
+footer .sosialmedia {
+	text-align: center;
+}
+
+footer .sosialmedia a {
+	margin: 0 1rem;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	transition: 0.5s;
+}
+
+footer .sosialmedia a:hover {
+	color: black;
+}
+
+footer .links {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+footer .links a {
+	margin: 0 0.8rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s;
+}
+
+footer .links a:hover {
+	color: black;
+}
+
+footer .creadits {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+footer .creadits p {
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: white;
+	line-height: 1.5;
+	transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 80%;
+	}
+
+	.home-image .gambar .container {
+		margin-top: 6.2rem;
+	}
+
+	.home-image .gambar .container .image img {
+		height: 460px;
+	}
+
+	.home-image .gambar .container .button {
+		top: 33%;
+	}
+
+	.home-image .gambar .dots {
+		left: 36.5%;
+		bottom: 150px;
+	}
+}
+
+@media (max-width: 992px) {
+	html {
+		font-size: 70%;
+	}
+
+	.home-about {
+		margin-top: -6rem;
+	}
+
+	.home-image .gambar .container {
+		margin-top: 6.3rem;
+	}
+
+	.home-image .gambar .container .image img {
+		height: 380px;
+	}
+
+	.home-image .gambar .dots {
+		left: 32.5%;
+		bottom: 227px;
+	}
+
+	.home-image .gambar .container .button {
+		top: 26%;
+	}
+
+	.home-menu {
+		margin-top: -15rem;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 63%;
+	}
+
+	#humberger-menu {
+		display: inline-block;
+	}
+
+	.navigasi .navigasi-nav {
+		display: block;
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 25rem;
+		height: 100vh;
+		background-color: white;
+		transition: 0.3s;
+	}
+
+	.navigasi .navigasi-nav.active {
+		right: 0;
+	}
+
+	.navigasi .navigasi-nav a {
+		display: block;
+		margin: 1.3rem;
+		font-size: 1.7rem;
+		color: black;
+	}
+
+	.navigasi .navigasi-nav a:hover {
+		color: red;
+	}
+
+	.navigasi .navigasi-nav a::after {
+		transform-origin: 0 0;
+		border-bottom: 0.2rem solid red;
+	}
+
+	.navigasi .navigasi-nav a:hover::after {
+		transform: scaleX(0.2);
+	}
+
+	.home-background .container .image-company img {
+		max-width: 30rem;
+	}
+
+	.home-image .gambar .container {
+		margin-top: 6.2rem;
+	}
+
+	.home-image .gambar .container .image img {
+		height: 290px;
+	}
+
+	.home-image .gambar .dots {
+		left: 28%;
+		bottom: 309px;
+	}
+
+	.home-image .gambar .container .button {
+		top: 20%;
+	}
+
+	.home-image .gambar .container .button a {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 35px;
+	}
+
+	.home-image .gambar .dot {
+		height: 18px;
+		width: 18px;
+	}
+
+	.home-image {
+		margin-top: -5rem;
+	}
+
+	.home-menu {
+		margin-top: -25rem;
+	}
+
+	.home-rate {
+		margin-top: -4rem;
+	}
+
+	.ourcontact .contact {
+		flex-wrap: wrap;
+		padding: 0 2rem;
+	}
+
+	.ourcontact .contact .map {
+		height: 40rem;
+	}
+
+	.ourcontact .contact form {
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 450px) {
+	html {
+		font-size: 53%;
+	}
+
+	.home-background .container .title {
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	.home-background .container .title h2 {
+		font-size: 3.1rem;
+	}
+
+	.home-background .container .title h1 {
+		font-size: 3.1rem;
+		margin-top: 0.7rem;
+	}
+
+	.home-background .container .title h3 {
+		margin-top: 1rem;
+	}
+
+	.home-background .container .title p {
+		margin-top: 1.3rem;
+		font-size: 2rem;
+	}
+
+	.home-background .container .image-company img {
+		margin-top: -20rem;
+		max-width: 30rem;
+	}
+
+	.home-image .gambar .container {
+		margin-top: 6rem;
+	}
+
+	.home-image .gambar .container .image img {
+		height: 170px;
+	}
+
+	.home-image .gambar .dots {
+		left: 18%;
+		bottom: 422px;
+	}
+
+	.home-image .gambar .container .button {
+		top: 12%;
+	}
+
+	.home-image .gambar .container .button a {
+		width: 23px;
+		height: 23px;
+		line-height: 23px;
+		font-size: 23px;
+	}
+
+	.home-image .gambar .dot {
+		height: 14px;
+		width: 14px;
+	}
+
+	.home-about .company .about-company h3 {
+		margin-top: 3rem;
+	}
+
+	.home-about .company img {
+		width: 35rem;
+		height: 17rem;
+	}
+
+	.home-menu {
+		margin-top: -50rem;
+	}
+
+	.home-rate {
+		margin-top: -8rem;
+	}
+
+	.home-rate .rate .product img {
+		max-height: 10.5rem;
+	}
+
+	.ourcontact .contact .map {
+		height: 25rem;
+	}
+}
