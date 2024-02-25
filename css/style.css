@@ -5,6 +5,10 @@
 	scroll-behavior: smooth;
 }
 
+body {
+	background-color: white;
+}
+
 .navigasi {
 	display: flex;
 	justify-content: space-between;
@@ -62,7 +66,6 @@
 	transform: scaleX(0.5);
 }
 
-
 .navigasi .humberger-menu a {
 	font-size: 2rem;
 	font-weight: bold;
@@ -79,13 +82,46 @@
 	display: none;
 }
 
+.navigasi .search-form {
+	display: flex;
+	position: absolute;
+	top: 100%;
+	width: 45rem;
+	height: 4.5rem;
+	background-color: white;
+	align-items: center;
+	transform: scaleY(0);	
+	transform-origin: top;
+	transition: 0.3s;
+}
+
+.navigasi .search-form.active {
+	transform: scaleY(1);
+}
+
+.navigasi .search-form input {
+	margin: 0 0.8rem;
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
+	color: black;
+	border: none;
+}
+
+.navigasi .search-form label {
+	font-size: 2rem;
+	color: black;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
 .home-background {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	padding: 0 2rem;
 	background-image: url(../img/background.jpg);
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .home-background .container {
@@ -94,14 +130,13 @@
 	justify-content: space-around;
 	align-items: center;
 	height: 100vh;
-	font-family: arial;
 }
 
 .home-background .container .title h2 {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: bold;
-	font-family: Noto Serif;
-	text-transform: capitalize;
+	font-family: lucida;
+	text-transform: uppercase;
 	color: red;
 }
 
@@ -111,9 +146,10 @@
 
 .home-background .container .title h1 {
 	margin-top: 0.6rem;
-	font-size: 3.2rem;
+	font-size: 3rem;
 	font-weight: bold;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	color: black;
 }
 
 .home-background .container .title h1 span {
@@ -124,20 +160,22 @@
 	margin-top: 0.5rem;
 	font-size: 2rem;
 	font-weight: bold;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	color: red;
-}
-
-.home-background .container .title p {
-	margin-top: 0.5rem;
-	font-size: 1.5rem;
-	text-transform: capitalize;
-	max-width: 30rem;
-	color: white
 }
 
 .home-background .container .title h3 span {
 	color: white;
+}
+
+.home-background .container .title p {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	max-width: 35rem;
+	text-align: justify;
+	color: white;
+	line-height: 1.5;
 }
 
 .home-background .container .title .icon {
@@ -149,7 +187,7 @@
 	font-size: 2.5rem;
 	text-decoration: none;
 	color: white;
-	padding: 0.2rem 0.2rem;
+	padding: 0.3rem 0.3rem;
 	border: 3px solid white;
 	border-radius: 1rem;
 	transition: 0.5s;
@@ -279,8 +317,9 @@
 	width: 100%;
 	height: 500px;
 	object-fit: cover;
-	border-radius: 1rem;
+	border-radius: 0px;
 	overflow: hidden;
+	border-radius: 2rem;
 }
 
 .home-image .gambar .container .button {
@@ -382,7 +421,7 @@
 .home-menu .pizza .card .menu-card {
 	margin: 1rem 1rem;
 	padding: 1.5rem 1rem;
-	border: 3px solid red;
+	border: 3px solid black;
 	background-color: whitesmoke;
 	border-radius: 2rem;
 	transition: 0.5s;
@@ -390,7 +429,7 @@
 
 .home-menu .pizza .card .menu-card:hover {
 	transform: scale(1.02);
-	border-color: black;
+	border-color: red;
 	background-color: whitesmoke;
 }
 
@@ -455,7 +494,7 @@
 .home-menu .pasta .card .menu-card {
 	margin: 1rem 1rem;
 	padding: 1.5rem 1rem;
-	border: 3px solid red;
+	border: 3px solid black;
 	background-color: whitesmoke;
 	border-radius: 2rem;
 	transition: 0.5s;
@@ -463,7 +502,7 @@
 
 .home-menu .pasta .card .menu-card:hover {
 	transform: scale(1.02);
-	border-color: black;
+	border-color: red;
 	background-color: whitesmoke;
 }
 
@@ -528,7 +567,7 @@
 .home-menu .rice .card .menu-card {
 	margin: 1rem 1rem;
 	padding: 1.5rem 1rem;
-	border: 3px solid red;
+	border: 3px solid black;
 	background-color: whitesmoke;
 	border-radius: 2rem;
 	transition: 0.5s;
@@ -536,7 +575,7 @@
 
 .home-menu .rice .card .menu-card:hover {
 	transform: scale(1.02);
-	border-color: black;
+	border-color: red;
 	background-color: whitesmoke;
 }
 
@@ -601,7 +640,7 @@
 .home-menu .snack .card .menu-card {
 	margin: 1rem 1rem;
 	padding: 1.5rem 1rem;
-	border: 3px solid red;
+	border: 3px solid black;
 	background-color: whitesmoke;
 	border-radius: 2rem;
 	transition: 0.5s;
@@ -609,7 +648,7 @@
 
 .home-menu .snack .card .menu-card:hover {
 	transform: scale(1.02);
-	border-color: black;
+	border-color: red;
 	background-color: whitesmoke;
 }
 
@@ -683,7 +722,7 @@
 .home-rate .rate .product {
 	padding: 2rem 1.5rem;
 	margin: 0.5rem 0.5rem;
-	border: 3px solid red;
+	border: 3px solid black;
 	background-color: whitesmoke;
 	border-radius: 2rem;
 	transition: 0.5s;
@@ -796,34 +835,32 @@
 }
 
 footer {
+	justify-content: center;
+	align-items: center;
 	padding: 1.5rem 7%;
 	background-color: red;
-}
-
-footer .sosialmedia {
 	text-align: center;
 }
 
-footer .sosialmedia a {
-	margin: 0 1rem;
+footer .socialmedia a {
+	margin: 0 0.5rem;
 	font-size: 2.5rem;
-	font-weight: bold;
+	text-decoration: none;
 	color: white;
 	transition: 0.5s;
 }
 
-footer .sosialmedia a:hover {
+footer .socialmedia a:hover {
 	color: black;
 }
 
 footer .links {
-	text-align: center;
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 }
 
 footer .links a {
-	margin: 0 0.5rem;
-	font-size: 1.4rem;
+	margin: 0 0.3rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	text-transform: capitalize;
 	text-decoration: none;
@@ -835,20 +872,15 @@ footer .links a:hover {
 	color: black;
 }
 
-footer .creadits {
-	text-align: center;
+footer .creadit p {
 	margin-top: 1rem;
-}
-
-footer .creadits p {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	text-transform: capitalize;
-	text-decoration: none;
 	color: white;
 	line-height: 1.5;
-	transition: 0.5s;
 }
+
 
 @media (max-width: 1200px) {
 	html {
@@ -948,6 +980,10 @@ footer .creadits p {
 		transform: scaleX(0.2);
 	}
 
+	.navigasi .humberger-menu a {
+		margin: 0 0.5rem;
+	}
+
 	.home-background .container .image-company img {
 		max-width: 30rem;
 	}
@@ -1005,6 +1041,7 @@ footer .creadits p {
 	.ourcontact .contact form {
 		padding-top: 0;
 	}
+
 }
 
 @media (max-width: 450px) {
@@ -1012,32 +1049,39 @@ footer .creadits p {
 		font-size: 53%;
 	}
 
+	.navigasi .search-form {
+		width: 77%;
+	}
+
 	.home-background .container .title {
 		text-align: center;
-		margin-top: 3rem;
+		margin-top: 10rem;
 	}
 
 	.home-background .container .title h2 {
-		font-size: 3.1rem;
-	}
-
-	.home-background .container .title h1 {
-		font-size: 3.1rem;
-		margin-top: 0.5rem;
-	}
-
-	.home-background .container .title h3 {
-		margin-top: 0.7rem;
-	}
+		margin-top: -3rem;
+	}	
 
 	.home-background .container .title p {
-		margin-top: 1.1rem;
-		font-size: 2rem;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.home-background .container .title .icon {
+		margin-top: 2rem;
+	}
+
+	.home-background .container .title .icon a {
+		font-size: 3rem;
+		padding: 0.5rem 0.5rem;
+	}
+
+	.home-background .container .image-company {
+		margin-top: -30rem;
 	}
 
 	.home-background .container .image-company img {
-		margin-top: -10rem;
-		max-width: 30rem;
+		max-width: 35rem;
 	}
 
 	.home-image .gambar .container {
@@ -1092,5 +1136,15 @@ footer .creadits p {
 
 	.ourcontact .contact .map {
 		height: 25rem;
+	}
+
+	footer .links a {
+		margin: 0 0.3rem;
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-transform: capitalize;
+		text-decoration: none;
+		color: white;
+		transition: 0.5s;
 	}
 }
