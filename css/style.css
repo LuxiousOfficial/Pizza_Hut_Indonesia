@@ -189,7 +189,7 @@ body {
 	color: white;
 	padding: 0.3rem 0.3rem;
 	border: 3px solid white;
-	border-radius: 1rem;
+	border-radius: 50%;
 	transition: 0.5s;
 }
 
@@ -1036,10 +1036,12 @@ footer .creadit p {
 
 	.ourcontact .contact .map {
 		height: 40rem;
+		border-radius: 0px 50px 0px 0px;
 	}
 
 	.ourcontact .contact form {
 		padding-top: 0;
+		border-radius: 0px 0px 0px 50px;
 	}
 
 }
@@ -1068,16 +1070,16 @@ footer .creadit p {
 	}
 
 	.home-background .container .title .icon {
-		margin-top: 2rem;
+		margin-top: 3rem;
 	}
 
 	.home-background .container .title .icon a {
 		font-size: 3rem;
-		padding: 0.5rem 0.5rem;
+		padding: 0.8rem 0.8rem;
 	}
 
 	.home-background .container .image-company {
-		margin-top: -30rem;
+		margin-top: -32rem;
 	}
 
 	.home-background .container .image-company img {
@@ -1136,6 +1138,11 @@ footer .creadit p {
 
 	.ourcontact .contact .map {
 		height: 25rem;
+		border-radius: 0px 50px 0px 0px;
+	}
+
+	.ourcontact .contact form {
+		border-radius: 0px 0px 0px 50px;
 	}
 
 	footer .links a {
