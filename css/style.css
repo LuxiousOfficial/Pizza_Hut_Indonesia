@@ -138,10 +138,9 @@ body {
 	font-family: lucida;
 	text-transform: uppercase;
 	color: red;
-}
-
-.home-background .container .title h2 span {
-	color: white;
+	padding: 1rem 1rem;
+	background-color: white;
+	border-radius: 0px 50px 0px 50px;
 }
 
 .home-background .container .title h1 {
